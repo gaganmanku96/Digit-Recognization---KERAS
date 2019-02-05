@@ -137,3 +137,11 @@ print(eval)
 ```
 
 Modifying the initial code and load the saved model.
+
+
+### Result
+##### Input window
+![1](https://user-images.githubusercontent.com/20324385/52311577-6de0e300-29cd-11e9-8191-64f29d422678.JPG)
+
+##### Outpur
+![2](https://user-images.githubusercontent.com/20324385/52311587-789b7800-29cd-11e9-9a68-3c1b61a3d863.JPG)
