@@ -6,7 +6,7 @@ from model import Model
 import scipy.ndimage
 from keras.preprocessing.image import ImageDataGenerator
 
-datagen = ImageDataGenerator(horizontal_flip=True,rotation_range=30)
+
 
 (train_x,train_y),(test_x,test_y) = mnist.load_data()
 
@@ -23,7 +23,7 @@ test_y = to_categorical(test_y)
 
 model = Model()
 model.compile(optimizer='adam',loss='categorical_crossentropy',metrics=['accuracy'])
-model.fit_generator(datagen.flow(train_x,train_y,batch_size=128),steps_per_epoch = 128,epochs = 20)
+model.fit(train_x,train_y,batch_size=128,epochs = 20)
 
 model.save('model.h5')
 
